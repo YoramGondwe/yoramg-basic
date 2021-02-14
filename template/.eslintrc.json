@@ -1,0 +1,60 @@
+{
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react",
+      "@typescript-eslint",
+      "eslint-plugin-prettier"
+  ],
+  "rules": {
+      "indent": [
+          "error",
+          "tab"
+      ],
+      "linebreak-style": [
+          "error",
+          "windows"
+      ],
+      "quotes": [
+          "error",
+          "single"
+      ],
+      "semi": [
+          "error",
+          "always"
+      ],
+      "no-trailing-spaces": "error",
+      "no-duplicate-imports": "error",
+      "no-unneeded-ternary": "error",
+      "no-whitespace-before-property": "error",
+      "one-var": ["error", "never"],
+      "operator-assignment": "error",
+      "arrow-spacing": "error",
+        "prettier/prettier": [
+          "error",
+          {
+              "printWidth": 80,
+              "trailingComma": "es2021",
+              "semi": true,
+              "jsxSingleQuote": false,
+              "singleQuote": false,
+              "useTabs": true
+          }
+      ]
+  }
+}
